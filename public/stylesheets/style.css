@@ -1,6 +1,10 @@
 /**/
 /*//// ALL PAGES ////*/
 /**/
+/*keeps browser from making autofill fields yellow*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
 * {
   font-family: 'Quicksand', sans-serif;
 }
