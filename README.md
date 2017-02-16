@@ -19,16 +19,26 @@ Trello Board
 * MongoDB
 * Express.js
 * Angular.js 1.6.1
-* Node.js 
+* Node.js
 * Materialize
 * HTML5
 * CSS3
 * Heroku
 * Passport
 
+## Wireframe
+
+![Wireframe](..public/images/WIREFRAME1.jpg)
+![Wireframe](..public/images/WIREFRAME2.jpg")
+
+<!--
+ <img src="public/images/WIREFRAME1.jpg">
+ <img src="public/images/WIREFRAME2.jpg">
+-->
+
 ## Mission Statement
 
-Our app is centered around children and an adult companion building a story through an interactive Angular interface. 
+Our app is centered around children and an adult companion building a story through an interactive Angular interface.
 
 ## Future Development
 
@@ -36,7 +46,5 @@ Our app is centered around children and an adult companion building a story thro
 * Connect and share stories with other users
 * Share completed stories to Twitter and Facebook
 * Add educational element
-* Child-friendly UI 
+* Child-friendly UI
 * Multiple story lines and additional characters to choose from
-
-

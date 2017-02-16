@@ -1,6 +1,8 @@
 <navbar></navbar>
+<h1 id="storyNewHeader">Create a Story!</h1>
 
-
+<progress-dashboard></progress-dashboard>
+<!--<progress-dashboard data="$ctrl.story"></progress-dashboard>-->
 <div id="statusBar" class="card-panel">
     <h4>Your Story Progress:</h4>
     <br>
@@ -14,11 +16,25 @@
 </div>
 <div class="storyNewcontainer">
 <h1 id="storyNewHeader">Create a Story!</h1>
+    <h6>Animal: {{$ctrl.story.animal}} </h6>
+    <br>
+    <h6>Place: {{$ctrl.story.place}} </h6>
+    Progress bar
+    <div class="progress">
+        <div class="determinate"
+             ng-class="{ true: '.noProgress' }[$ctrl.story.title ===  '']"
+             ng-class="{ true: '.fourthProgress' }[$ctrl.story.title !==  '']"
+             ng-class="{ true: '.halfProgress' }[$ctrl.story.name !==  '']"
+             ng-class="{ true: '.threeFourthsProgress' }[$ctrl.story.animal !==  '']"
+             ng-class="{ true: '.fullProgress' }[$ctrl.story.place !==  '']">
+        </div>
+    </div>
+</div>
 
-<article id="storyNewWrapper">
+<!--<article id="storyNewWrapper">-->
 
     <form ng-submit="$ctrl.save()">
-
+        <div class="storyNewContainer">
         <div class ='card-panel'>
             <h4>What is the title of your story?</h4>
             <input name="title" type="text" id="titleText" ng-model="$ctrl.story.title" placeholder="Title"/>
@@ -60,12 +76,11 @@
                 <label for="outerSpaceRadio">The Moon</label>
             </div>
         </div>
+    </div>
 
         <div id="storyNewButtons">
             <input id="storyNewSaveBtn" class="waves-effect waves-light btn" type="submit" value="Save">
             <button id='storyNewBackBtn' ui-sref="storyIndex" class="waves-effect waves-light btn">Back</button>
         </div>
-    </form>
-</div>
-
-</article>
+</form>
+<!--</article>-->
