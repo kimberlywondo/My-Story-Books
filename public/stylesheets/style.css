@@ -39,9 +39,10 @@ html {
 
 #loginCard {
   text-align: center;
-  width: 1200px;
-  margin: ;
+  width: 45%;
+  margin: auto;
 }
+
 
  #loginBtn{
    margin-top: 20px;
@@ -114,6 +115,7 @@ html {
 .storyIndexEditBtns {
   float: right;
   display: inline-flex;
+
 }
 
 .storyIndexEditBtns button {

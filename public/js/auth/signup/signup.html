@@ -3,18 +3,17 @@
 </nav>
 
 <div id="loginCard">
-    <div class="row valign-wrapper">
-        <div class="col s6 offset-s3 valign">
-            <div class="card light-blue darken-2">
-                <div class="card-content white-text">
-                    <span class="card-title">
-                        <h4>Parent / Teacher Sign Up</h4>
-                        <p>Children must be logged in by a parent.</p>
-                    </span>
+<!-- <div class="row valign-wrapper"> -->
+    <div class="card light-blue darken-2">
+      <div class="card-content white-text">
+        <span class="card-title"><h4>Parent / Teacher Sign Up</h4></span>
+          <p>Children must be logged in by a parent.</p>
+          <br>
+        <form name="form"
+              ng-submit='$ctrl.signup(form)'
+              novalidate>
 
-<form name="form" ng-submit='$ctrl.signup(form)' novalidate>
-
-    <div class="form-group" ng-class="{ 'has-success': form.username.$valid && $ctrl.submitted,
+        <div class="form-group" ng-class="{ 'has-success': form.username.$valid && $ctrl.submitted,
                                         'has-error': form.username.$invalid && $ctrl.submitted }">
 
             <input type="email"
@@ -31,9 +30,9 @@
             <p class="help-block" ng-show="form.username.$error.mongoose">
                 {{ $ctrl.errors.username }}
             </p>
-    </div>
+        </div>
 
-    <div class="form-group" ng-class="{ 'has-success': form.password.$valid && $ctrl.submitted,
+        <div class="form-group" ng-class="{ 'has-success': form.password.$valid && $ctrl.submitted,
                                           'has-error': form.password.$invalid && $ctrl.submitted }">
 
             <input type="password"
@@ -58,9 +57,12 @@
             <p class="help-block" ng-show="form.password.$error.required && $ctrl.submitted">
                 Required
             </p>
+        </div>
+
+       <button id='signUpNewBtn' class="waves-effect waves-light red lighten-2 btn" type="submit">SUBMIT</button>
+       <button id='signUpBackBtn'class="waves-effect waves-light red lighten-2 btn" ui-sref="index">BACK</button>
+     </form>
+
     </div>
-
-    <button id='signUpNewBtn' class="waves-effect waves-light red lighten-2 btn" type="submit">SUBMIT</button>
-    <button id='signUpBackBtn'class="waves-effect waves-light red lighten-2 btn" ui-sref="index">BACK</button>
-
-</form>
+  </div>
+</div>
