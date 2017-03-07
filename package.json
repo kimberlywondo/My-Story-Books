@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev":  "nodemon ./bin/www"
   },
   "dependencies": {
     "angular": "^1.6.1",
@@ -23,18 +24,4 @@
     "passport-local-mongoose": "^4.0.0",
     "pug": "~2.0.0-beta6",
     "serve-favicon": "~2.3.0"
-  },
-  "description": "<a href=\"https://storyify.herokuapp.com\"> Deployment Link </a>",
-  "main": "app.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kimberlywondo/My-Story-Books.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kimberlywondo/My-Story-Books/issues"
-  },
-  "homepage": "https://github.com/kimberlywondo/My-Story-Books#readme"
-}
+  }
