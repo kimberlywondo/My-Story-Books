@@ -31,7 +31,6 @@ Trello Board
 
 ## Wireframe
 
-![Wireframe](public/images/WIREFRAME2.jpg)
 ![Wireframe](public/images/WIREFRAME1.jpg)
 
 
