@@ -64,7 +64,5 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
                 $state.go('index',{});
             }
         }
-
-
 	});
 });
