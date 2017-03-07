@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "dev":  "nodemon ./bin/www"
+    "start": "node app.js"
   },
   "dependencies": {
     "angular": "^1.6.1",
@@ -26,6 +25,6 @@
     "serve-favicon": "~2.3.0"
   },
   "engines": {
-    "node": "7.0.0" 
+    "node": "7.0.0"
   }
 }
